@@ -1,10 +1,12 @@
+@import "./styles/nav.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
 
 
 
 
 body {
-    width: 70%;
+    width: 100%;
     background-color: black;
     margin: auto;
     padding-top: 50px;

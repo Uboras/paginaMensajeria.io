@@ -1,0 +1,59 @@
+.navigator{
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.navigator-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    width: fit-content;
+    list-style: none;
+    border-radius: 20px;
+    background-color: rgba(242, 242, 245, 0.1);
+    padding: 4px 16px  8px 16px;
+
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.navigator-list-item{
+    margin: 0px auto;
+    display: flex;
+    padding-top: 5px;
+    font-size: 20px;
+    border: 2px solid transparent;
+}
+.navigator-list-item > a:hover {
+    text-decoration: none;
+    
+}
+.navigator-list-item:hover{
+        animation: 1.5s linear border infinite;
+
+}
+
+
+
+@keyframes border {
+0%{
+
+    
+    
+    
+}
+50%{
+    
+    border-bottom: 2px solid rgb(242, 242, 245);
+} 
+100%{
+
+    
+    
+    
+}
+
+}
