@@ -24,5 +24,3 @@ function enviarMensajeLinkedin(){
     var linke ="https://www.linkedin.com/in/hernan-manera-62312682"
     window.open(linke);
 }
-
-    
