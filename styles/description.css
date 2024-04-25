@@ -7,7 +7,7 @@
 }
 
 .descripcion {
-  max-width: 70%;
+  max-width: 100%;
   margin: auto;
   height: fit-content;
   display: flex;
@@ -87,6 +87,6 @@ scale: 1.2;
   #text {
     margin: auto;
     width: 100%;
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
 }
