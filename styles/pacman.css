@@ -1,0 +1,22 @@
+.contenedor-pacman{
+    width: 50%;
+    height: fit-content;
+        margin: auto;
+}
+.pacman {
+    margin: auto;
+    min-width: 130px;
+    min-height: 50px;
+    width: 260px;
+    height: 100px;
+    background-size: 1500%;
+    background-image: url("../icons/Pacman.svg");
+}
+
+.movePacman {
+    animation: 1.5s move ease reverse infinite;
+    
+    background-position: left;
+    animation-timing-function: steps(14);
+    
+}

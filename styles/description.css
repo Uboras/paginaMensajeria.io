@@ -1,93 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
-.Contenedor-descripcion{
-  width: 100%;
-  height: 41vh;
-  margin: 20px;
-  background: linear-gradient(rgba(36, 30, 30), rgb(70, 70, 70), rgb(70, 70, 70),rgba(36, 30, 30)); 
+.Contenedor-descripcion {
+  margin: 40px 0px;
+  min-height: 47vh;
+  
 }
 
 .descripcion {
-  margin: 10px;
-      padding: 10px;
-      
-      height: fit-content;
-      width: 90%;
-      
-      margin: 0px auto;
-      
-      display: flex;
-      justify-content: space-around;
+  max-width: 70%;
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
 
-    }
+}
 
+
+
+#text {
+  border: 5px double black;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgb(163, 161, 161);
+
+  font-size: 1.4em;
+  font-family: "MedievalSharp", cursive;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 3px 3px 6px rgb(50, 50, 50);
+  text-align: justify;
+
+
+  min-width: 80%;
+  max-width: 80%;
+
+}
+
+.caras {
   
-
-    #text {
-      border: 5px double black;
-      border-radius: 8px;
-      padding: 20px;
-      background-color: rgb(196, 194, 194);
-
-      font-size: 1.4em;
-      font-family: "MedievalSharp", cursive;
-      font-weight: 300;
-      font-style: normal;
-      text-shadow: 3px 3px 6px rgb(50, 50, 50);
-      text-align: justify;
+  min-width: 130px;
+  min-height: 160px;
+  width: 130px;
+  height: 160px;
 
 
-      min-width: 70%;
-      max-width: 70%;
-     
-    }
+  background-image: url("../icons/carasHablando.svg");
+  background-size: 6400%;
+  background-position: left;
+  animation: 7.7s move ease-in 1;
+  animation-timing-function: steps(63);
 
-    .caras {
-      
-      min-width: 130px;
-      min-height: 160px;
-      width: 130px;
-      height: 160px;
+}
+.caras:hover{
+scale: 1.2;
+}
+@keyframes move {
+  from {
+    background-position: left;
+    background-position: right;
 
+  }
+}
 
-      background-image: url("../icons/carasHablando.svg");
-      background-size: 6400%;
-      background-position: left;
-      animation: 7.7s move ease-in 1;
-      animation-timing-function: steps(63);
+@media screen and (max-width:767px) {
+  .Contenedor-descripcion {
+    width: 100% ;
+    padding: 20px 0px;
+    height: 60vh;
+    max-height: 70vh;
+    min-height: fit-content;
 
-    }
-    
-    @keyframes move {
-      from {
-        background-position: left;
-        background-position: right;
+  }
 
-      }
-    }
-      @media screen and (max-width:720px) {
-        .Contenedor-descripcion{
-          padding: 20px 0px;
-          height: 50vh;
-          
-          }
-      
-        .descripcion {
-        margin: auto;
-          display: block;
-        width: 100%;
-      
-      }
+  .descripcion {
+    margin: auto;
+    display: block;
+    width: 100%;
 
-      .caras {
-        margin: 20px auto;
+  }
 
-      }
+  .caras {
+    margin: 20px auto;
 
-      #text {
-        margin: auto;
-        width: 100%;
-        font-size: 1em;
-      }
-    }
+  }
+
+  #text {
+    margin: auto;
+    width: 100%;
+    font-size: 0.9em;
+  }
+}

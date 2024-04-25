@@ -11,7 +11,7 @@ parrafos.forEach((parrafo, index) => {
     setTimeout(() => {
       palabrasPasadas += `<span class="text">${palabra} &nbsp;</span>`;
       palabraContainer.innerHTML = palabrasPasadas;
-    }, 100 * (index + palabraIndex));
+    }, 10 * (index + palabraIndex));
     palabraContainer.innerHTML += "/n";
   });
 

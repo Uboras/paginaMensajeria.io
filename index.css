@@ -1,18 +1,17 @@
 @import "./styles/nav.css";
 @import "./styles/description.css";
+@import "./styles/pacman.css";
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
 
-
-
-
 body {
+    margin: 0px;
     width: 100%;
-    background-color: rgb(36, 29, 29);
-    margin: auto;
-    padding-top: 50px;
+    background-image: url("./icons/fondo1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: block;
-    justify-content: center;
-}
+    }
 
 .Derecho {
     font-family: 'Kosugi', sans-serif;
