@@ -21,6 +21,10 @@
     align-items: center;
     justify-content: center;
 }
+.navigator-list-item>a {
+    color: #3498db;
+    text-decoration: none;
+}
 
 .navigator-list-item {
     margin: 0px auto;

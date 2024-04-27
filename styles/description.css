@@ -1,21 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 .Contenedor-descripcion {
-  margin: 40px 0px;
-  min-height: 47vh;
+  min-height: 15vh;
   
+
 }
 
 .descripcion {
-  max-width: 100%;
+  max-width: 80%;
   margin: auto;
   height: fit-content;
   display: flex;
   justify-content: space-around;
-
+ 
 }
 
+.RedesSociales {
+  margin: 20px auto;
+  text-align: center;
+  justify-content: center;
+  
+}
 
+.icon-svg-redes {
+  margin-right: 10px;
+}
+
+.icon-svg-redes:hover {
+  fill: rgb(211, 24, 24);
+  scale: 1.3;
+  
+}
 
 #text {
   border: 5px double black;
@@ -23,21 +38,22 @@
   padding: 20px;
   background-color: rgb(163, 161, 161);
 
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-family: "MedievalSharp", cursive;
   font-weight: 300;
   font-style: normal;
   text-shadow: 3px 3px 6px rgb(50, 50, 50);
   text-align: justify;
+  
+  
 
-
-  min-width: 80%;
-  max-width: 80%;
+  min-width: 70%;
+  max-width: 70%;
 
 }
 
 .caras {
-  
+  margin-top: 20px;
   min-width: 130px;
   min-height: 160px;
   width: 130px;
@@ -51,9 +67,11 @@
   animation-timing-function: steps(63);
 
 }
-.caras:hover{
-scale: 1.2;
+
+.caras:hover {
+  scale: 1.2;
 }
+
 @keyframes move {
   from {
     background-position: left;
@@ -64,11 +82,10 @@ scale: 1.2;
 
 @media screen and (max-width:767px) {
   .Contenedor-descripcion {
-    width: 100% ;
-    padding: 20px 0px;
-    height: 60vh;
-    max-height: 70vh;
-    min-height: fit-content;
+    width: 100%;
+    padding: 10px 0px;
+    min-height: 62vh;
+      
 
   }
 
@@ -76,7 +93,6 @@ scale: 1.2;
     margin: auto;
     display: block;
     width: 100%;
-
   }
 
   .caras {
@@ -85,6 +101,7 @@ scale: 1.2;
   }
 
   #text {
+    
     margin: auto;
     width: 100%;
     font-size: 1.1em;

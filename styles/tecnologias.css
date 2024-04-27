@@ -1,0 +1,38 @@
+.tecnologias{
+    margin: auto;
+    width: 75%;
+    height: fit-content;
+    padding: 20px;
+    }
+
+
+.gameboy{
+    
+    margin: 20px ;
+    min-width: 148px;
+    min-height: 234px;
+    width: 267px;
+    height: 420px;
+
+
+
+background-image: url("../icons/StartGameBoy.svg");
+background-size: 300%;
+background-position: left;
+animation: 2s gameboy ease infinite;
+animation-timing-function: steps(2);
+
+}
+.gameboy:hover{
+cursor: pointer;
+
+}
+
+@keyframes gameboy {
+   0%{
+    background-position: left;
+    background-position: right;
+   } 
+}
+
+  
