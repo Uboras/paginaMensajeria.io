@@ -53,6 +53,7 @@ proyecto.forEach(elements =>{
   
 }
 )
+
 return aux}
 
 let sobremi ="<p><strong>¡Hola! Soy Hernán</strong></p><p>Un apasionado de la tecnología y los viajes, con una trayectoria laboral en servicio que ha evolucionado hacia el fascinante mundo de la programación. Con 37 años de edad, he invertido mi último año en adquirir habilidades como desarrollador full stack.</p>";
