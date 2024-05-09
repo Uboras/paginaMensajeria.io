@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 .Contenedor-descripcion {
-  min-height: 15vh;
+  min-height: fit-content;
   
 
 }
@@ -16,7 +16,7 @@
 }
 
 .RedesSociales {
-  margin: 20px auto;
+  margin: 10px auto;
   text-align: center;
   justify-content: center;
   
@@ -28,7 +28,7 @@
 
 .icon-svg-redes:hover {
   fill: rgb(211, 24, 24);
-  scale: 1.3;
+  scale: 1.1;
   
 }
 
@@ -38,12 +38,12 @@
   padding: 20px;
   background-color: rgb(163, 161, 161);
 
-  font-size: 1.6em;
+  font-size: 1.1rem;
   font-family: "MedievalSharp", cursive;
   font-weight: 300;
   font-style: normal;
   text-shadow: 3px 3px 6px rgb(50, 50, 50);
-  text-align: justify;
+  text-align: justify ;
   
   
 
@@ -51,25 +51,22 @@
   max-width: 70%;
 
 }
-
 .caras {
   margin-top: 20px;
   min-width: 130px;
   min-height: 160px;
   width: 130px;
   height: 160px;
-
-
-  background-image: url("../icons/carasHablando.svg");
-  background-size: 6400%;
-  background-position: left;
-  animation: 7.7s move ease-in 1;
-  animation-timing-function: steps(63);
-
 }
-
+.animacionCara{
+background-image: url("../icons/carasHablando.svg");
+background-size: 6400%;
+background-position: left;
+animation: 7.7s move ease-in 1;
+animation-timing-function: steps(63);
+}
 .caras:hover {
-  scale: 1.2;
+  scale: 1.1;
 }
 
 @keyframes move {

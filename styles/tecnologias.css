@@ -23,10 +23,6 @@ animation: 2s gameboy ease infinite;
 animation-timing-function: steps(2);
 
 }
-.gameboy:hover{
-cursor: pointer;
-
-}
 
 @keyframes gameboy {
    0%{

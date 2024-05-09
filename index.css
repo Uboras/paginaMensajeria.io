@@ -4,15 +4,18 @@
 @import "./styles/proyectos.css";
 @import "./styles/tecnologias.css";
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
-
-body {
-    min-height: 98vh;
-    margin: 0px;
-    width: 100%;
+html{
+    min-height: 100vh;
+    height: fit-content;
     background-image: url("./icons/fondo1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    width: 100%;
     display: block;
     }
 
