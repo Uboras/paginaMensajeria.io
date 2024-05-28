@@ -1,18 +1,23 @@
 .tecnologias{
     margin: auto;
-    width: 75%;
     height: fit-content;
-    padding: 20px;
+    
     }
 
-
-.gameboy{
+#jugamos{
     
-    margin: 20px ;
+    font-family: "MedievalSharp", cursive;
+    color: rgb(32, 32, 32);
+    font-size: 30PX    ;
+    text-align: center;
+}
+.gameboy{
+    margin: auto;
+    
     min-width: 148px;
     min-height: 234px;
-    width: 267px;
-    height: 420px;
+    width: 148px;
+    height: 234px;
 
 
 

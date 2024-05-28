@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 .Contenedor-descripcion {
-  min-height: fit-content;
-  
+ height: fit-content;
+  min-width: 70%;
 
 }
 
 .descripcion {
-  max-width: 80%;
+  max-width: 50%;
+  min-width: 40%;
   margin: auto;
   height: fit-content;
   display: flex;
@@ -32,7 +33,10 @@
   
 }
 
+
 #text {
+  
+  min-height: 50%;
   border: 5px double black;
   border-radius: 8px;
   padding: 20px;
@@ -47,12 +51,14 @@
   
   
 
-  min-width: 70%;
-  max-width: 70%;
+  min-width: 50%;
+  max-width: 50%;
 
 }
+
 .caras {
-  margin-top: 20px;
+
+  margin: 20px auto;
   min-width: 130px;
   min-height: 160px;
   width: 130px;
@@ -77,10 +83,10 @@ animation-timing-function: steps(63);
   }
 }
 
-@media screen and (max-width:767px) {
+@media (max-width:1020px) {
   .Contenedor-descripcion {
     width: 100%;
-    padding: 10px 0px;
+    padding: 0px;
     min-height: 62vh;
       
 

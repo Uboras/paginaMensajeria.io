@@ -1,14 +1,14 @@
 .contenedor-pacman{
-     width: 50%;
-    height: fit-content;
+     width: 100%;
+     height: fit-content;
      margin: auto;
 }
 .pacman {
   
     min-width: 130px;
     min-height: 50px;
-    width: 260px;
-    height: 100px;
+    width: 130px;
+    height: 50px;
     background-size: 1500%;
     background-image: url("../icons/Pacman.svg");
 }
