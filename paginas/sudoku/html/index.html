@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<section>
+    
+<div>
+    <h1>Nivel de dificultad</h1>
+    <button onclick="dificultadSelecionada('easy')">Facil </button>
+    <button onclick="dificultadSelecionada('medium')">Moderado</button>
+    <button onclick="dificultadSelecionada('hard')">Dificil</button>
+</div>
+<div>
+        <div class="sudoku-container">
+            <table id="sudoku-grid">
+                
+            </table>
+        </div>
+       
+</div>
+</section>
+
+
+    <!--sodoku-->
+    <h1>Sudoku</h1>
+    <div id="sudoku"></div>
+    <button onclick="mostrar(this.array2D)">Mostrar Original</button>
+    <button onclick="mostrar(this.array2D)">Mostrar Errores</button>
+    <button onclick="mostrar(this.array2D)">Verificar</button>
+</body>
+<script src="../js/sudoku.js"></script>
+<script src="../js/sudokuMuestra.js"></script>
+</html>

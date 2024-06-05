@@ -2,7 +2,7 @@
 
 .Contenedor-descripcion {
  height: fit-content;
-  min-width: 70%;
+  min-width: 80%;
 
 }
 
@@ -80,33 +80,5 @@ animation-timing-function: steps(63);
     background-position: left;
     background-position: right;
 
-  }
-}
-
-@media (max-width:1020px) {
-  .Contenedor-descripcion {
-    width: 100%;
-    padding: 0px;
-    min-height: 62vh;
-      
-
-  }
-
-  .descripcion {
-    margin: auto;
-    display: block;
-    width: 100%;
-  }
-
-  .caras {
-    margin: 20px auto;
-
-  }
-
-  #text {
-    
-    margin: auto;
-    width: 100%;
-    font-size: 1.1em;
   }
 }

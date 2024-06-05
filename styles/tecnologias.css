@@ -1,9 +1,9 @@
-.tecnologias{
-    margin: auto;
-    height: fit-content;
-    
-    }
-
+    .tecnologias{
+        position: absolute;
+        left: 27%;
+        bottom: 20%;
+        scale: 0.80;
+        }
 #jugamos{
     
     font-family: "MedievalSharp", cursive;
