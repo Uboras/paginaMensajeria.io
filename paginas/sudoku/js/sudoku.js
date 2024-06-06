@@ -10,7 +10,7 @@ class Sudoku {
   creacion(rows = 9, cols = 9) {
     let array2D = new Array(rows);
     for (let i = 0; i < rows; i++) {
-      array2D[i] = new Array(cols).fill(20);
+      array2D[i] = new Array(cols).fill(0);
     }
     return array2D;
   }
@@ -24,12 +24,16 @@ class Sudoku {
         }
       }
     }
-    
+    this.verificaciondeCeros()
   }
   random(){
     return  (Math.floor(Math.random()*8)+1)
   }
-
+  verificaciondeCeros(){
+   let contadas = this.array2D.map(elem => elem).filter(0);
+   console.log("son las contadas "+ contadas)
+    return (contadas>0)
+  }
   /**
    * Devuelve una posicion y el valor del sudoku secreto generado
    * @return rows , column , value 
