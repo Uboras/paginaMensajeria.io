@@ -7,7 +7,7 @@ var navContainer = document.querySelectorAll("#nav");
 // Variables
 var about = [
   "Soy Hernán Manera",
-  "Con más de 11 años de experiencia como cajero en Cencosud S.A. , decidí seguir mi pasión por la programación web y me convertí en desarrollador FullStack Junior en Egg Corporation, una empresa líder en la formación de programadores informáticos. En Egg Corporation, trabajo con tecnologías como Java, SQL, HTML, CSS, JavaScript, Git, JDBC y JPA, y desarrollo aplicaciones web y móviles que aportan valor a los clientes y a la sociedad.",
+  "Con más de 11 años de experiencia como cajero en Cencosud S.A. , decidí seguir mi pasión por la programación web y me convertí en desarrollador FullStack Junior en Egg Corporation, una empresa líder en la formación de programadores informáticos. En Egg Corporation, trabajo con tecnologías como Java, JDBC y JPA , SQL, HTML, CSS, JavaScript y Git. Desarrollo aplicaciones web y móviles que aportan valor a los clientes y a la sociedad.",
   "Me caracterizo por ser un aprendiz constante y curioso, siempre en busca de nuevas tecnologías y mejores prácticas para mejorar mi habilidad como desarrollador. Recientemente obtuve dos certificaciones en Java y SQL, y estoy cursando un programa de Programación Web en la Universidad de Buenos Aires. Mi objetivo es seguir creciendo profesionalmente y contribuir al avance de la industria de la programación web con soluciones innovadoras y de calidad.",
 ];
 var velocidad = [
@@ -65,15 +65,27 @@ var contactos = [
 ];
 
 // Variables componentes
-var insnav =  `<nav><ul><li><a href="#about">Sobre mí</a></li><li><a href="#projects">Proyectos</a></li><li><a href="#skills">Habilidades</a></li><li><a href="#contact">Contacto</a></li></ul></nav>`;
+var insnav = `<nav><ul><li><a href="#about">Sobre mí</a></li><li><a href="#projects">Proyectos</a></li><li><a href="#skills">Habilidades</a></li><li><a href="#contact">Contacto</a></li></ul></nav>`;
 var insSobre = `<h1>${about[0]}</h1><p>${about[1]}</p><p>${about[2]}</p>`;
-var insProyectos = "<h2>Proyectos</h2>" + velocidad.map((element) => `<div class="project"><h3>${element.tecnologias}</h3><p>${element.Descripcion}</p><a href="${element.link}" target="_blank">Ver proyecto</a></div>`).join("");
-var insTecno = "<h2>Habilidades</h2>" + "<ul>" + tecnologias.map((element) => `<li>${element}</li> `).join("") + "</ul>";
-var inscontacto = "<h2>Contacto</h2>" + `<p>Puedes contactarme en: <a href="mailto:${contactos[0]}"> Hernana Manera(Mail)</a></p><p>Sígueme en <a href="${contactos[1]}" target="_blank">LinkedIn</a> o <a href="${contactos[2]}" target="_blank">GitHub</a>.</p>`;
+var insProyectos =
+  "<h2>Proyectos</h2>" +
+  velocidad
+    .map(
+      (element) =>
+        `<div class="project"><h3>${element.tecnologias}</h3><p>${element.Descripcion}</p><a href="${element.link}" target="_blank">Ver proyecto</a></div>`
+    )
+    .join("");
+var insTecno =
+  "<h2>Habilidades</h2>" +
+  "<ul>" +
+  tecnologias.map((element) => `<li>${element}</li> `).join("") +
+  "</ul>";
+var inscontacto =
+  "<h2>Contacto</h2>" +
+  `<p>Puedes contactarme en: <a href="mailto:${contactos[0]}"> Hernana Manera(Mail)</a></p><p>Sígueme en <a href="${contactos[1]}" target="_blank">LinkedIn</a> o <a href="${contactos[2]}" target="_blank">GitHub</a>.</p> <h2> <a href='./PorfolioGamer/index.html' target="_blank">Perfil Retro</a></h2>`;
 
 // Inner sections
-navContainer.forEach((element)=> 
-element.innerHTML = insnav)
+navContainer.forEach((element) => (element.innerHTML = insnav));
 sobremeContainer.innerHTML = insSobre;
 projectContainer.innerHTML = insProyectos;
 tecnologiaContainer.innerHTML = insTecno;
