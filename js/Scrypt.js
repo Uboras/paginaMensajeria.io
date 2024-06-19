@@ -62,6 +62,7 @@ var contactos = [
   "hernanmanera@hotmail.com.ar",
   "https://www.linkedin.com/in/hernan-manera-62312682/",
   "https://github.com/Uboras",
+  "./PorfolioGamer/index.html"
 ];
 
 // Variables componentes
@@ -82,7 +83,7 @@ var insTecno =
   "</ul>";
 var inscontacto =
   "<h2>Contacto</h2>" +
-  `<p>Puedes contactarme en: <a href="mailto:${contactos[0]}"> Hernana Manera(Mail)</a></p><p>Sígueme en <a href="${contactos[1]}" target="_blank">LinkedIn</a> o <a href="${contactos[2]}" target="_blank">GitHub</a>.</p> <h2> <a href='./PorfolioGamer/index.html' target="_blank">Perfil Retro</a></h2>`;
+  `<p>Puedes contactarme en: <a href="mailto:${contactos[0]}"> Hernana Manera(Mail)</a></p><p>Sígueme en <a href="${contactos[1]}" target="_blank">LinkedIn</a> o <a href="${contactos[2]}" target="_blank">GitHub</a>.</p> <h2> <a href="${contactos[3]}" target="_blank"> <h2>Perfil Retro </h2></a>`;
 
 // Inner sections
 navContainer.forEach((element) => (element.innerHTML = insnav));
