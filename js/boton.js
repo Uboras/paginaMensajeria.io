@@ -11,12 +11,15 @@ function ActiveContenido(value) {
     }
     case "proyectos":
         ActiveProyecto();
-      console.log("Contenido activo:", value);
+     
       break;
     case "stack":
         ActiveStack();
-      console.log("Contenido activo:", value);
+     
       break;
+      case "all":
+        ActiveContenidoAll()
+        break;
     default:
       console.log("default:", value);
       break;
@@ -25,23 +28,37 @@ function ActiveContenido(value) {
 
 function ActiveProyecto() {
   hexagonoClass.style.opacity = 1;
+  hexagonoClass.style.zIndex = 1;
   tecnologiaClass.style.opacity =0;
+  tecnologiaClass.style.zIndex =0;
   sobremeClass.style.opacity = 0;
+  sobremeClass.style.zIndex = 0;
 };
 
-function ActiveStack(value) {
-  hexagonoClass.style.opacity = 0;
-  tecnologiaClass.style.opacity = 1;
+function ActiveStack() {
+    hexagonoClass.style.opacity = 0;
+  hexagonoClass.style.zIndex = 0;
+  tecnologiaClass.style.opacity =1;
+  tecnologiaClass.style.zIndex =1;
   sobremeClass.style.opacity = 0;
-
-
+  sobremeClass.style.zIndex = 0;
 };
 
-function ActiveAbout(value) {
-
+function ActiveAbout() {
   hexagonoClass.style.opacity = 0;
-  tecnologiaClass.style.opacity = 0;
+  hexagonoClass.style.zIndex = 0;
+  tecnologiaClass.style.opacity =0;
+  tecnologiaClass.style.zIndex =0;
   sobremeClass.style.opacity = 1;
-
-
+  sobremeClass.style.zIndex = 1;
 };
+
+function ActiveContenidoAll(){
+  hexagonoClass.style.opacity = 1;
+  hexagonoClass.style.zIndex = 1;
+  tecnologiaClass.style.opacity =1;
+  tecnologiaClass.style.zIndex =1;
+  sobremeClass.style.opacity = 1;
+  sobremeClass.style.zIndex = 1;
+
+}

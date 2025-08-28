@@ -1,17 +1,139 @@
+@media screen and (width > 1525px) {
+     .contac{
+        
+        left: -450px;
+        opacity: 1;
+        z-index: 1;
+    }
+    .hexagono {
+        opacity: 1;
+        left: 350px;
+        z-index: 1;
+    }
+    .skills {
+        left: 50px;
+        z-index: 1;
+        opacity: 1;
+        
+    }
+    .sobremi{
+        width: 40%;
+        left: 750px;
+        z-index: 1;
+        opacity: 1;
+        
+    }
+    .containerAll{
+        left: 30%;
+        
+    }
+    #btonAllContent{
+        display: inline;
+    }
+}
+@media screen and (max-width: 1524px) {
+     .contac{
+        
+        left: -420px;
+        opacity: 1;
+        z-index: 1;
+    }
+    .hexagono {
+        opacity: 1;
+        left: 300px;
+        z-index: 1;
+    }
+    .skills {
+        left: 0px;
+        z-index: 1;
+        opacity: 1;
+        
+    }
+    .sobremi{
+        width: 40%;
+        left: 700px;
+        z-index: 1;
+        opacity: 1;
+        
+    }
+    .containerAll{
+        left: 30%;
+        
+    }
+ 
+}
+@media screen and (max-width: 1400px) {
+    .contac{
+        left: -80%;
+    }
+    .hexagono {
+        left: 0;
+        opacity: 0;
+    }
+    .sobremi{
+        opacity: 0;
+        left: 0px;    
+        width: 70%;
+    }
+    .skills{
+        opacity: 0;
+    }
+    .containerAll{
+        left: 50%;
+        
+    }
+
+
+}
+@media screen and (max-width: 1023px) {
+    .contac{
+        left: -100%;
+    }
+    .hexagono {
+        top: 20px;
+    }
+    .skills {
+        top: 20px;
+    }
+    .sobremi{
+        top: 20px;
+        width: 300px;
+    }
+    
+}
 @media screen and (max-width: 768px) {
-    #slider .container {
-        grid-template-columns: 1fr;
+    .contac{
+        left: -110%;
     }
-}
-@media screen and (max-width: 480px) {
-    header, footer {
-        padding: 0.5em 0;
+    .hexagono {
+        top: 20px;
     }
-
-    nav ul {
-        flex-direction: column;
-        gap: 0.5em;
+    .skills {
+        top: 20px;
     }
-
+    .sobremi{
+        top: 20px;
+    }
+    .containerAll{
+        left: 60%;
+    }
   
-}
+}   
+@media screen and (width< 767px) {
+    .contac{
+        left: 0;
+    }
+    .hexagono {
+        top: 100%;
+    }
+    .skills {
+        top: 100%;
+    }
+    .sobremi{
+        top: 100%;
+    }
+    .containerAll{
+        left: 20%;
+    }
+  
+}   

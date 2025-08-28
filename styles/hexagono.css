@@ -1,23 +1,23 @@
 .hexagono {
     opacity: 0;
     position: absolute;
-    top: 20px;
+    top: 50px;
     left:0 ;
     color: #fff;
-    width:80%;
-    height: 90%;
+    width: fit-content;
+    height: fit-content;
     perspective: 1000px; 
- 
+    
 
 }
 
 .side {
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background-color: rgba(20, 30, 50, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(10, 11, 41, 0.8);;
     border-radius: 8px;
-    box-shadow: 0px 2px 8px rgb(233, 231, 231), -50px 4px 2px rgba(236, 27, 27, 0.219);
+    box-shadow:-20px 4px 2px #ff9900;
     width: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     height: 200px ;
     display: flex;
     flex-direction: column;
@@ -25,10 +25,10 @@
     align-items: center;
     font-weight: bold;
     font-size: 1rem;
-    transform-style: preserve-3d;
     backface-visibility: hidden;
-    transform: rotateY(15deg) translateX(100px);
-     border: 1px solid rgba(255, 255, 255, 0.5);
+    transform-style: preserve-3d;
+    transform: rotateY(15deg) translateX(50px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 
 }
 .side:hover{
@@ -54,7 +54,7 @@
 
 @keyframes rotate {
     from {
-        transform: rotateY(30deg) translateX(100px);
+        transform: rotateY(30deg) translateX(50px);
        
     }
     to {

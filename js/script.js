@@ -72,6 +72,7 @@ navContainer.forEach((e) => (e.innerHTML = insnav));
 // SOBRE MÍ
 const insSobre = `
   <div class='sobremi'>
+  <div class='titleHex'>About</div>
     <h1>${about[0]}</h1>
     ${about
       .slice(1)
@@ -87,7 +88,7 @@ const hexagonotemplate = `
   ${proyectossss
     .map(
       (p, i) =>
-        `<div class="side ">
+        `<div class="side side${i+1} ">
           <h3>${p.tecnologias}</h3>
           <p>${p.Descripcion}</p>
           <a href="${p.link}" target="_blank">Ver proyecto</a>
@@ -122,10 +123,11 @@ tecnologiaContainer.innerHTML = insTecno;
 // CONTACTO
 const inscontacto = `
 <div class='contac'>
-<div> 
+<div class='botonesContenido'>
 <button class="expand-btn" value="about" onclick="ActiveContenido(this.value)">About</button>
 <button class="expand-btn" value="proyectos" onclick="ActiveContenido(this.value)">Proyectos</button>
 <button class="expand-btn" value="stack" onclick="ActiveContenido(this.value)">Stack</button>
+<button class="expand-btn" id="btonAllContent" value="all" onclick="ActiveContenido(this.value)">Todo</button>
 </div>
     <h2>Hernán Manera</h2>
     
