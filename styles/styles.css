@@ -187,7 +187,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    gap: 12px;
+    gap: 6px;
     padding: 0;
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -234,8 +234,8 @@ html {
     
     min-height: 100vh;
     background-image: url('../assets/fondo2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: round;
     position: relative;
     background-color: var(--color-fondo) ;
 }

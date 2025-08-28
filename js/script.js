@@ -15,25 +15,41 @@ const about = [
 
 const proyectossss = [
   {
-    tecnologias: "React Native",
-    Descripcion: "Inicio de sesión con React Native",
+    tecnologias: "Front-End",
+    Descripcion: "",
     link: "https://github.com/Uboras/LogIn-ReactNative",
   },
-  {
-    tecnologias: "Java",
-    Descripcion: "10 programas de Java",
-    link: "https://github.com/Uboras/10-Programas-Java",
+    {
+    tecnologias: "Back-End",
+    Descripcion: "",
+    link: "https://github.com/Uboras/LogIn-ReactNative",
   },
-  {
-    tecnologias: "Java",
-    Descripcion: "Calculadora y juegos en Java",
-    link: "https://github.com/Uboras/PrograMane",
+    {
+    tecnologias: "Mobile",
+    Descripcion: "",
+    link: "https://github.com/Uboras/LogIn-ReactNative",
   },
-  {
-    tecnologias: "HTML, CSS y React",
-    Descripcion: "Programa React avanzado UTN",
-    link: "https://github.com/Uboras/UTN-DesarolladorWeb",
-  },
+  //   {
+  //     tecnologias: "React Native",
+  //     Descripcion: "Inicio de sesión con React Native",
+  //     link: "https://github.com/Uboras/LogIn-ReactNative",
+  //   },
+  //   // {
+  //   //   tecnologias: "Java",
+  //   //   Descripcion: "10 programas de Java",
+  //   //   link: "https://github.com/Uboras/10-Programas-Java",
+  //   // },
+  //   // {
+  //   //   tecnologias: "Java",
+  //   //   Descripcion: "Calculadora y juegos en Java",
+  //   //   link: "https://github.com/Uboras/PrograMane",
+  //   // },
+  //   // {
+  //   //   tecnologias: "HTML, CSS y React",
+  //   //   Descripcion: "Programa React avanzado UTN",
+  //   //   link: "https://github.com/Uboras/UTN-DesarolladorWeb",
+  //   // },
+  //
 ];
 
 const tecnologias = [
@@ -88,7 +104,7 @@ const hexagonotemplate = `
   ${proyectossss
     .map(
       (p, i) =>
-        `<div class="side side${i+1} ">
+        `<div class="side side${i + 1} ">
           <h3>${p.tecnologias}</h3>
           <p>${p.Descripcion}</p>
           <a href="${p.link}" target="_blank">Ver proyecto</a>

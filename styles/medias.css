@@ -1,139 +1,220 @@
 @media screen and (width > 1525px) {
-     .contac{
-        
+    .contac {
+
         left: -450px;
         opacity: 1;
         z-index: 1;
     }
+
     .hexagono {
         opacity: 1;
         left: 350px;
         z-index: 1;
     }
+
     .skills {
         left: 50px;
         z-index: 1;
         opacity: 1;
-        
+
     }
-    .sobremi{
+
+    .sobremi {
         width: 40%;
         left: 750px;
         z-index: 1;
         opacity: 1;
-        
+
     }
-    .containerAll{
+
+    .containerAll {
         left: 30%;
-        
+
     }
-    #btonAllContent{
+
+    #btonAllContent {
         display: inline;
     }
 }
+
 @media screen and (max-width: 1524px) {
-     .contac{
-        
+    .contac {
+
         left: -420px;
         opacity: 1;
         z-index: 1;
     }
+
     .hexagono {
         opacity: 1;
         left: 300px;
         z-index: 1;
     }
+
     .skills {
         left: 0px;
         z-index: 1;
         opacity: 1;
-        
+
     }
-    .sobremi{
+
+    .sobremi {
         width: 40%;
         left: 700px;
         z-index: 1;
         opacity: 1;
-        
+
     }
-    .containerAll{
+
+    .containerAll {
         left: 30%;
-        
+
     }
- 
+
 }
+
 @media screen and (max-width: 1400px) {
-    .contac{
+    .contac {
         left: -80%;
     }
+
     .hexagono {
         left: 0;
         opacity: 0;
     }
-    .sobremi{
+
+    .sobremi {
         opacity: 0;
-        left: 0px;    
+        left: 0px;
         width: 70%;
     }
-    .skills{
+
+    .skills {
         opacity: 0;
     }
-    .containerAll{
+
+    .containerAll {
         left: 50%;
-        
+
     }
 
 
 }
+
 @media screen and (max-width: 1023px) {
-    .contac{
+    .contac {
         left: -100%;
     }
+
     .hexagono {
         top: 20px;
     }
+
     .skills {
         top: 20px;
     }
-    .sobremi{
+
+    .sobremi {
         top: 20px;
         width: 300px;
     }
-    
+
+    html {
+        background-image: url('../assets/fondo1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
 }
-@media screen and (max-width: 768px) {
-    .contac{
-        left: -110%;
+
+@media screen and (width< 768px) {
+    .skills ul {
+        grid-template-columns: repeat(2, 1fr);
+
     }
+
+    .contac {
+        left:-3em;
+    }
+
     .hexagono {
-        top: 20px;
+        top: 100px;
+
+    }
+       .skills >ul>li {
+        
+        transform: rotateY(0deg) translateX(0px);
+        box-shadow:0px 4px 2px #ff9900;
     }
     .skills {
-        top: 20px;
+        z-index: 0;
+        opacity: 0;
+        top: 100px;
     }
-    .sobremi{
-        top: 20px;
+    .skills > li:hover {
+    transform: translateY(-5px) ;
+    animation: rotate 0.5s forwards,  box-shadow 2s forwards;
+}
+    .side{
+    box-shadow: 0px 4px 2px #ff9900;
+    transform: rotateY(0deg) ;
     }
-    .containerAll{
-        left: 60%;
+    .side:hover{
+    transform: translateX(5px) ;
+    animation: box-shadow 2s forwards;
+}
+    
+    .sobremi {
+        top: 100px;
     }
-  
-}   
-@media screen and (width< 767px) {
-    .contac{
+
+    .containerAll {
+        left: 30%;
+    }
+ }
+
+@media screen and (width< 321px) {
+    .contac {
         left: 0;
+        z-index: 0;
+        opacity: 0;
     }
+
     .hexagono {
-        top: 100%;
+        top: 0%;
+        z-index: 0;
+        opacity: 0;
     }
+
     .skills {
-        top: 100%;
+        top: 150px;
+        opacity: 0;
+        z-index: 0;
     }
-    .sobremi{
-        top: 100%;
+    .skills >ul>li {
+        transform: rotateY(10deg) translateX(-50px);
+
     }
-    .containerAll{
-        left: 20%;
+    .skills ul {
+        grid-template-columns: repeat(2, 1fr);
+
     }
-  
-}   
+
+    .sobremi {
+        top: 150px;
+        left: 10px;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    .titleHex {
+        display: none;
+    }
+
+    .containerAll {
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+
+}
