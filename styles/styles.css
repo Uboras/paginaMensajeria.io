@@ -1,11 +1,16 @@
-
 :root {
     --color-primario: #0a192f;
+    /* azul petróleo oscuro */
     --color-secundario: #64ffda;
-    --color-fondo: #f5f5f5;
-    --color-texto: #333;
+    /* turquesa para acentos */
+    --color-fondo: #0d1f2d;
+    /* azul más profundo para fondos */
+    --color-texto: #e0e0e0;
+    /* gris claro para textos */
     --color-claro: #ffffff;
-    --color-link: #007BFF;
+    /* blanco */
+    --color-link: #ff9800;
+    /* naranja como color de contraste */
 }
 
 * {
@@ -14,20 +19,82 @@
     box-sizing: border-box;
 }
 
-body {
+.containerAll {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 55%;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: var(--color-fondo);
     color: var(--color-texto);
+
+}
+/* sección sobre mí */
+.sobremi {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: rgba(10, 25, 47, 0.85);
+    padding: 2em;
+    border-radius: 12px;
+    min-height: 50%;
+    width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* sección about */
+.social-icons{
+  text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.social-icons a {
+    margin: 0 auto;
+  font-size: 1.5rem;
+  transition: color 0.3s;
 }
 
-header, footer {
+.social-icons a:hover {
+    color: var(--color-claro);
+      
+}
+
+.contac {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: -108%;
+    bottom: 10px;
+    background-color: rgba(10, 25, 47, 0.85);
+    padding: 1em;
+    border-radius: 12px;
+    width: fit-content;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+.contac a {
+    text-decoration: none;
+    margin-right: 0.5em;
+    color: var(--color-link);
+}
+
+header,
+footer {
     background-color: var(--color-primario);
     color: var(--color-claro);
     text-align: center;
     padding: 1em 0;
 }
 
+/* navegación */
 nav ul {
     list-style: none;
     padding: 0;
@@ -48,27 +115,50 @@ nav ul li a:hover {
 }
 
 section {
-    max-width: 900px;
     margin: auto;
     padding: 2rem 1rem;
 }
 
-h1, h2 {
-    color: var(--color-primario);
+h1,
+h2 {
+    color: var(--color-secundario);
     text-align: center;
 }
 
+/* proyectos */
+.proyectconteiner {
+    background-color: rgba(10, 25, 47, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    position: absolute;
+    padding: 1em;
+    right: calc(100%/3);
+    bottom: 10px;
+    
+ border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.contenedorProyect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .project {
-    background-color: var(--color-claro);
+    
+   border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(20, 30, 50, 0.7);
     border-radius: 8px;
     padding: 1em;
-    margin-bottom: 1em;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .project:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .project a {
@@ -77,57 +167,84 @@ h1, h2 {
     font-weight: bold;
 }
 
-ul.skills {
-    display: flex;
-    flex-wrap: wrap;
+/* habilidades */
+.skills {
+   opacity: 0;
+    background-color: rgba(10, 25, 47, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    height: fit-content;
+    width: 80%;
+    top: 10px;
+    left: 0px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 0.5em;
+    gap: 12px;
     padding: 0;
 }
 
-ul.skills li {
-    background: var(--color-primario);
-    color: var(--color-claro);
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    list-style: none;
-    font-size: 0.9em;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-ul.skills {
-
-    background-color: var(--color-fondo);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0;
-}
-
-ul.skills li {
+.skills>ul>li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-primario);
-    color: var(--color-claro);
-    padding: 0.5rem;
-    border-radius: 12px;
-    width: 100px;
-    text-align: center;
-    font-size: 0.9em;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 0.8em 1em;
     list-style: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 0.9em;
+    color: var(--color-claro);
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
-ul.skills li i {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+.skills>ul>li:hover {
+    transform: translateY(-4px);
+    background: rgba(100, 255, 218, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+
+.skills>ul>li i {
+    font-size: 1.6em;
+    margin-bottom: 0.3em;
+    color: var(--color-secundario);
+}
+
+/* fondo principal */
+html {
+    
+    height: 100%;
+    background-image: url('../assets/fondo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 10px;
+}
+.expand-btn {
+    background-color: rgba(10, 25, 47, 0.85);
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--color-texto);
+  }
+
+  .expand-btn:hover {
+    
+    color:var(--color-link);
+    
+  }

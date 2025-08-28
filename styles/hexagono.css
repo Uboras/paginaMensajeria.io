@@ -1,0 +1,64 @@
+.hexagono {
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    left:0 ;
+    color: #fff;
+    width:80%;
+    height: 90%;
+    perspective: 1000px; 
+ 
+
+}
+
+.side {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(20, 30, 50, 0.7);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgb(233, 231, 231), -50px 4px 2px rgba(236, 27, 27, 0.219);
+    width: 250px;
+    margin-bottom: 10px;
+    height: 200px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY(15deg) translateX(100px);
+     border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.side:hover{
+    transform: rotateY(0deg) translateX(250px) ;
+    animation: rotate 0.5s forwards,  box-shadow 2s forwards;
+}
+
+.titleHex {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(10, 25, 47, 0.85);
+    writing-mode: vertical-lr; /* o vertical-lr */
+    text-orientation: upright; /* hace que cada letra quede derecha */
+    position: absolute;
+    top: 0;
+    left: -3em;
+    height: 100%;
+    color: var(--color-link);
+    font-size: 2em;
+    width: 2.5em;
+    padding: 14px ;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(30deg) translateX(100px);
+       
+    }
+    to {
+        transform: rotateY(0deg);
+        box-shadow: 0px 2px 8px rgb(233, 231, 231), 0px 0px 50px var(--color-link);
+    }
+}
